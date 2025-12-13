@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% block title %} Страница выбора музыки {% endblock %}
+
+{% block content %}
+<h1>Контент музыкальной страницы</h1>
+<form action="/submit" method="POST">
+    <div class="mb-3"> 
+        <form method="post">
+            <input name = "song" type="text" class="form-control" placeholder="Исполнитель - название"> 
+            <button class="btn btn-primary w-100 py-2" type="submit">Добавить</button>
+        </form>
+    </div>
+</form>
+{% endblock %}

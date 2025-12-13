@@ -1,0 +1,10 @@
+{% extends 'main/base.html' %}
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
+<h1>Контент страницы любимых напитков</h1>
+<form method="post" class="form-control">
+    <input type="text" name="menu" placeholder="Имя - предпочитаемый алкоголь" class="form-control">
+    <button class="btn btn-primary w-100 py-2" type="submit">Отправить</button>
+</form>
+{% endblock %}
