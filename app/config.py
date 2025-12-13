@@ -1,7 +1,7 @@
 import os
 
 class Config(object):
-    USER = os.environ.get('POSTGRES_USER', 'POSTGRES_USER')
+    USER = os.environ.get('POSTGRES_USER', 'postgres_user')
     PASSWORD = os.environ.get('POSTGRES_PASSWORD', 'password')
     HOST = os.environ.get('POSTGRES_HOST', 'postgres')
     PORT = os.environ.get('POSTGRES_PORT', '5432')
