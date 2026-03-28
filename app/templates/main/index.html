@@ -1,4 +1,293 @@
-{% extends 'main/base.html' %}
-{% block title %} Главная страница {% endblock %}
+<!DOCTYPE html>
+<html lang="ru">
 
-{% block content %}<h1>Контент главной страницы</h1>{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Сони и Рустама</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Приглашаем Вас на нашу свадьбу!</h1>
+    </header>
+
+    <main>
+        <div class="into_photo"></div>
+
+        <h1>Не планируйте ничего на это ПОНЕДЕЛЬНИК!!!</h1>
+
+
+        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Стили для анимации -->
+            <style>
+                /* Анимация рисования + пульсации БОЛЬШОГО сердца */
+                .heart-outline {
+                    stroke-dasharray: 720;
+                    stroke-dashoffset: 720;
+                    animation: drawHeart 2s ease-in-out forwards,
+                        pulse 1.5s ease-in-out 2s infinite;
+                    transform-origin: left;
+                }
+
+                @keyframes drawHeart {
+                    to {
+                        stroke-dashoffset: 0;
+                    }
+                }
+
+                /* Пульсация большого сердца */
+                @keyframes pulse {
+
+                    0%,
+                    100% {
+                        stroke-width: 8;
+                        opacity: 1;
+                        transform: scale(1);
+                        filter: drop-shadow(0 0 3px rgba(212, 165, 165, 0.6));
+                    }
+
+                    50% {
+                        stroke-width: 10;
+                        opacity: 0.85;
+                        transform: scale(1.05);
+                        filter: drop-shadow(0 0 12px rgba(212, 165, 165, 1));
+                    }
+                }
+            </style>
+
+            <!-- Заголовок -->
+            <text x="250" y="50" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24"
+                font-weight="300" fill="#333333" letter-spacing="3">ИЮНЬ 2026</text>
+
+            <!-- Линия разделитель -->
+            <line x1="50" y1="70" x2="450" y2="70" stroke="#e0e0e0" stroke-width="1" />
+
+            <!-- Дни недели -->
+            <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#999999" font-weight="400">
+                <text x="100" y="110" font-size="24" text-anchor="middle">ВС</text>
+                <text x="250" y="110" font-size="34" text-anchor="middle">ПН</text>
+                <text x="400" y="110" font-size="24" text-anchor="middle">ВТ</text>
+            </g>
+
+            <!-- День 28 (Воскресенье) -->
+            <g transform="translate(100, 200)">
+                <text x="0" y="0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32"
+                    font-weight="300" fill="#666666">28</text>
+                <text x="0" y="25" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10"
+                    fill="#999999">ВС</text>
+            </g>
+
+            <!-- День 29 (Понедельник) - СВАДЬБА 💕 -->
+            <g transform="translate(250, 200)">
+                <!-- УЗКОЕ Сердце-рамка (сохранены пропорции) -->
+                <path class="heart-outline" d="M 0,-60 
+             C -58,-110 -115,-65 -115,10 
+             C -115,80 0,130 0,130 
+             C 0,130 115,80 115,10 
+             C 115,-65 58,-110 0,-60 Z" fill="none" stroke="#d4a5a5" stroke-width="7" stroke-linecap="round" />
+                <!-- Число (в центре сердца) -->
+                <text x="0" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="92"
+                    font-weight="500" fill="#d4a5a5">29</text>
+                <!-- Подпись (под числом, внутри сердца) -->
+                <text x="0" y="75" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11"
+                    fill="#d4a5a5" font-weight="500" letter-spacing="3"></text>
+            </g>
+
+            <!-- День 30 (Вторник) -->
+            <g transform="translate(400, 200)">
+                <text x="0" y="0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32"
+                    font-weight="300" fill="#666666">30</text>
+                <text x="0" y="25" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10"
+                    fill="#999999">ВТ</text>
+            </g>
+
+            <!-- Нижняя линия -->
+            <line x1="50" y1="350" x2="450" y2="350" stroke="#e0e0e0" stroke-width="1" />
+
+        </svg>
+
+
+        <div class="schedule">
+            <h1>Во сколько???</h1>
+            <svg width="100%" height="70" viewBox="0 0 1000 70" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="150" y1="35" x2="400" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
+                <line x1="600" y1="35" x2="850" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
+
+                <path d="M450 35 Q 460 25, 475 30 Q 460 35, 450 35" fill="#d4a5a5" opacity="0.7" />
+                <path d="M460 35 Q 470 28, 485 32 Q 470 35, 460 35" fill="#d4a5a5" opacity="0.6" />
+                <path d="M470 35 Q 480 30, 495 33 Q 480 35, 470 35" fill="#d4a5a5" opacity="0.5" />
+
+                <path d="M550 35 Q 540 25, 525 30 Q 540 35, 550 35" fill="#d4a5a5" opacity="0.7" />
+                <path d="M540 35 Q 530 28, 515 32 Q 530 35, 540 35" fill="#d4a5a5" opacity="0.6" />
+                <path d="M530 35 Q 520 30, 505 33 Q 520 35, 530 35" fill="#d4a5a5" opacity="0.5" />
+
+                <circle cx="500" cy="35" r="4" fill="#d4a5a5" opacity="0.8" />
+
+                <path d="M520 35 Q 530 45, 545 40 Q 530 35, 520 35" fill="#d4a5a5" opacity="0.5" />
+                <path d="M480 35 Q 470 45, 455 40 Q 470 35, 480 35" fill="#d4a5a5" opacity="0.5" />
+            </svg>
+            <div class="first_wrapper">
+                <div class="first_text_wrapper">
+                    <div class="start_first_block">
+                        <h3>15:00 Сбор гостей и фуршет</h3>
+                        
+                    </div>
+                    <div class="end_first_block">
+                        <h3>16:00 Церемония</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="second_wrapper">
+
+
+                <div class="second_text_wrapper">
+                    <div class="start_second_block">
+                        <h3>17:00 Начало банкета</h3>
+                    </div>
+                    <div class="end_second_block">
+                        <h3>23:00 Завершение вечера</h3>
+                        <svg width="100%" height="70" viewBox="0 0 1000 70" preserveAspectRatio="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="200" y1="35" x2="800" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.7" />
+
+                            <path d="M50 35 C 80 20, 120 20, 150 35 C 160 40, 170 40, 180 38" fill="none"
+                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                            <path d="M50 35 C 80 50, 120 50, 150 35 C 160 30, 170 30, 180 32" fill="none"
+                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+
+                            <path d="M950 35 C 920 20, 880 20, 850 35 C 840 40, 830 40, 820 38" fill="none"
+                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                            <path d="M950 35 C 920 50, 880 50, 850 35 C 840 30, 830 30, 820 32" fill="none"
+                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+
+                            <circle cx="500" cy="35" r="2.5" fill="#B76E79" opacity="0.8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a href="https://yandex.ru/maps/?ll=37.285290%2C56.193257&mode=poi&poi%5Bpoint%5D=37.285133%2C56.193596&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D205743994460&z=18.76"
+            target="_blank" rel="noopener noreferrer"
+            style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.5 3L20.34 3.03L15 5.1L9 3L3.36 4.9C3.15 4.97 3 4.97 3 5V19C3 19.55 3.45 20 4 20L4.5 19.96L9.5 18.06L15 20L20.64 18.1C20.85 18.03 21 17.93 21 17.7V4C21 3.45 20.55 3 20.5 3ZM15 18L9 15.89V5L15 7.11V18Z"
+                    fill="#dddddd" />
+            </svg>
+            <span>Место на карте</span>
+        </a>
+
+        <div class="wishes">Пожелания</div>
+
+        <div class="wishes-container">
+
+            <div class="top-row">
+                <div class="first_section_of_wishes-container">
+                    <img src="static/pics/frog_heart.png" alt="Левая картинка" class="side-img">
+
+                <div class="right-text_of_wishes-container">
+                    <p>Главное для нас – ваше присутствие!</p>
+                    <p>Если хотите подарить нам нужный подарок, будем очень благодарны за вклад в бюджет молодой семьи.</p>
+                </div>
+                </div>
+
+                 <div class="second_section_of_wishes-container">
+
+                <div class="left-text_of_wishes-container">
+                    <p>Пожалуйста, не дарите нам цветы, мы не успеем насладиться их красотой до отъезда в наше свадебное путешествие.</p>
+                </div>
+                <img src="static/pics/frog_flow.png" alt="Правая картинка" class="side-img">
+                 </div>
+            </div>
+
+            <!-- Нижняя картинка по центру -->
+            <img src="static/pics/frog_nice.png" alt="Нижняя картинка" class="bottom-img">
+
+        </div>
+
+
+        <div class="dress_code">Дресс код</div>
+        <img src="static/pics/style_frog.png" class="style_image">
+        <div class="administration_work">Олеся</div>
+
+        <div class="wedding-form-container">
+            <h2 class="wedding-form-title">Анкета гостя</h2>
+            <p class="wedding-form-subtitle">Пожалуйста, заполните форму до 1 мая</p>
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Введите имена гостей</label>
+                    <input type="text" id="name" name="name"
+                        placeholder="Если вы идёте парой или семьей, смело вводите все имена" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Сможете ли вы присутствовать?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="yes" checked> С радостью приду
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="no"> К сожалению, не смогу
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Предпочтения по напиткам</label>
+                    <div class="checkbox-list">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="white_wine"> Белое вино
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="red_wine"> Красное вино
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="champagne"> Шампанское / Игристое
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="strong"> Крепкие напитки
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="strong"> Домашние настойки
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol[]" value="non_alco"> Только безалкогольные
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="song">Песня, под которую вы обязательно станцуете</label>
+                    <input type="text" id="song" name="song" placeholder="Название трека в любом виде">
+                </div>
+
+                <div class="form-group">
+                    <label for="diet">Предпочтения в еде / Аллергии</label>
+                    <textarea id="diet" name="diet" rows="3"
+                        placeholder="Например: не ем рыбу, аллергия на орехи..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить ответ</button>
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer>
+        До встречи!
+        <p>© Copyright</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
