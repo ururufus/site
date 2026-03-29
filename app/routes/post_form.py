@@ -14,7 +14,7 @@ def create():
             'song': request.form.get('song'),
             'diet': request.form.get('diet')
         }
-        post_form = PostForm(name = all_data)
+        post_form = PostForm(**all_data)
         try:
             db.session.add(post_form)
             db.session.commit()
