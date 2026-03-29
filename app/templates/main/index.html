@@ -23,7 +23,6 @@
 
             <!-- Стили для анимации -->
             <style>
-                /* Анимация рисования + пульсации БОЛЬШОГО сердца */
                 .heart-outline {
                     stroke-dasharray: 720;
                     stroke-dashoffset: 720;
@@ -220,7 +219,7 @@
             <h2 class="wedding-form-title">Анкета гостя</h2>
             <p class="wedding-form-subtitle">Пожалуйста, заполните форму до 1 мая</p>
 
-            <form action="#" method="POST">
+            <form action="/post_form" method="POST"></form>
 
                 <div class="form-group">
                     <label for="name">Введите имена гостей</label>
@@ -244,22 +243,22 @@
                     <label>Предпочтения по напиткам</label>
                     <div class="checkbox-list">
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="white_wine"> Белое вино
+                            <input type="checkbox" name="alcohol" value="white_wine"> Белое вино
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="red_wine"> Красное вино
+                            <input type="checkbox" name="alcohol" value="red_wine"> Красное вино
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="champagne"> Шампанское / Игристое
+                            <input type="checkbox" name="alcohol" value="champagne"> Шампанское / Игристое
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="strong"> Крепкие напитки
+                            <input type="checkbox" name="alcohol" value="strong"> Крепкие напитки
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="strong"> Домашние настойки
+                            <input type="checkbox" name="alcohol" value="strong_home"> Домашние настойки
                         </label>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="alcohol[]" value="non_alco"> Только безалкогольные
+                            <input type="checkbox" name="alcohol" value="non_alco"> Только безалкогольные
                         </label>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ from .routes.post import post
 from .routes.main import main
 from .routes.post_song import post_song
 from .routes.post_menu import post_menu
+from .routes.post_form import post_form
 
 
 
@@ -24,6 +25,7 @@ def create_app(config_class=Config):
     app.register_blueprint(main)
     app.register_blueprint(post_song)
     app.register_blueprint(post_menu)
+    app.register_blueprint(post_form)
 
     db.init_app(app) # Позднее связывание с bd без использования здесь db = SQLAlchemy(app) - хотим разнести контексты
 
