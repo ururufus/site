@@ -7,14 +7,14 @@ post_form = Blueprint('post_form', __name__)
 @post_form.route('/post_form', methods = ['POST', 'GET'])
 def create():
     if request.method == 'POST':
-        all_data = {
-            'name': request.form.get('name'),
-            'attendance': request.form.get('attendance'),
-            'alcohol': request.form.getlist('alcohol'),  # Важно!
-            'song': request.form.get('song'),
-            'diet': request.form.get('diet')
-        }
-        post_form = PostForm(**all_data)
+        
+        post_form = PostForm(
+            name=request.form.get('name'),
+            attendance=request.form.get('attendance'),
+            alcohol=','.join(request.form.getlist('alcohol')),
+            song=request.form.get('song'),
+            diet=request.form.get('diet')
+        )
         try:
             db.session.add(post_form)
             db.session.commit()
