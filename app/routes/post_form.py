@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, flash
+from flask import Blueprint, render_template, request, redirect, flash, url_for
 from ..extensions import db
 from ..models.post_form import PostForm
 
@@ -21,6 +21,6 @@ def create():
         except Exception as e:
             print(str(e))
         flash('Ваш ответ успешно отправлен! 💕 Спасибо!', 'success')
-        #return redirect('/')
+        return redirect(url_for('index'))
     # else:
     #     return render_template('post_form/post_form.html')
