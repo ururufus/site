@@ -211,7 +211,8 @@ section {
     font-size: 175%;
 }
 
-.style_image {
+.style_image,
+.weee_image {
     width: 100%;
     display: block;
     align-items: center;
