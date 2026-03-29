@@ -21,6 +21,6 @@ def create():
         except Exception as e:
             print(str(e))
         flash('Ваш ответ успешно отправлен! 💕 Спасибо!', 'success')
-        return redirect('/index')
+        #return redirect('/')
     # else:
     #     return render_template('post_form/post_form.html')
