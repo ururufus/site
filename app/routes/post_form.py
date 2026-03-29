@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect
+from flask import Blueprint, render_template, request, redirect, flash
 from ..extensions import db
 from ..models.post_form import PostForm
 
@@ -20,6 +20,7 @@ def create():
             db.session.commit()
         except Exception as e:
             print(str(e))
-        return redirect('/post_form')
-    else:
-        return render_template('post_form/post_form.html')
+        flash('Ваш ответ успешно отправлен! 💕 Спасибо!', 'success')
+        return redirect('/index')
+    # else:
+    #     return render_template('post_form/post_form.html')
