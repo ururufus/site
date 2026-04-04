@@ -43,10 +43,9 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 20px;
+    color: #954d4d;
     text-align: center;
+    font-size: 275%;
 }
 
 nav {
@@ -65,8 +64,8 @@ nav a:hover {
 
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 section {
@@ -76,13 +75,13 @@ section {
 .schedule {
     text-align: center;
     font-weight: 700;
-    font-size: 175%;
+    font-size: 125%;
 }
 
 .wishes {
     text-align: center;
     font-weight: 700;
-    font-size: 175%;
+    font-size: 125%;
 }
 
 .wishes-container {
@@ -110,6 +109,10 @@ section {
     line-height: 1.4;
     color: #333;
     font-size: 30px;
+}
+
+.into_photo_right {
+    text-align: right;
 }
 
 .second_section_of_wishes-container {
@@ -181,7 +184,7 @@ section {
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
     .side-img {
-        width: 50%;
+        width: 40%;
     }
 
     .right-text_of_wishes-container,
@@ -191,7 +194,7 @@ section {
     }
 
     .middle-text {
-        width: 50%;
+        width: 60%;
         font-size: 12px;
     }
 
@@ -200,7 +203,7 @@ section {
     }
 
     .bottom-img {
-        max-width: 60%;
+        max-width: 50%;
     }
 
 }
@@ -208,7 +211,13 @@ section {
 .dress_code {
     text-align: center;
     font-weight: 700;
-    font-size: 175%;
+    font-size: 125%;
+}
+
+.dress_code_container, .after_dress_code {
+    text-align: center;
+    font-weight: 700;
+    font-size: 125%;
 }
 
 .style_image,
@@ -232,10 +241,10 @@ section {
 
 .wedding-form-subtitle {
     text-align: center;
-    color: #888;
+    color: #5c5b5b;
     font-size: 14px;
     margin-bottom: 30px;
-    font-style: italic;
+    font-style: initial;
 }
 
 /* Группы полей */

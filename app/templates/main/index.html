@@ -10,28 +10,33 @@
 
 <body>
     {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            <div class="flash-container">
-                {% for category, message in messages %}
-                    <div class="flash-message {{ category }}">
-                        <span>{{ '✅' if category == 'success' else '⚠️' }}</span>
-                        <span>{{ message }}</span>
-                        <button onclick="this.parentElement.remove()">×</button>
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
+    {% if messages %}
+    <div class="flash-container">
+        {% for category, message in messages %}
+        <div class="flash-message {{ category }}">
+            <span>{{ '✅' if category == 'success' else '⚠️' }}</span>
+            <span>{{ message }}</span>
+            <button onclick="this.parentElement.remove()">×</button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
     {% endwith %}
     <header>
-        <h1>Приглашаем Вас на нашу свадьбу!</h1>
+        <h2> наконец-то мы</h2>
+        <h1> женимся</h1>
     </header>
 
     <main>
+        <div class="into_photo_right">
+            <h2>и приглашаем вас на нашу свадьбу</h2>
+            <h1>дорогие гости!</h1>
+        </div>
+
         <div class="into_photo">
             <img src="static/pics/weee.png" class="weee_image">
         </div>
 
-        <h1>Не планируйте ничего на это ПОНЕДЕЛЬНИК!!!</h1>
 
 
         <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
@@ -123,32 +128,35 @@
 
         </svg>
 
+        <h2>Не планируйте ничего на этот</h2>
+        <h1>ПОНЕДЕЛЬНИК!!!</h1>
+
+        <svg width="100%" height="70" viewBox="0 0 1000 70" preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="150" y1="35" x2="400" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
+            <line x1="600" y1="35" x2="850" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
+
+            <path d="M450 35 Q 460 25, 475 30 Q 460 35, 450 35" fill="#d4a5a5" opacity="0.7" />
+            <path d="M460 35 Q 470 28, 485 32 Q 470 35, 460 35" fill="#d4a5a5" opacity="0.6" />
+            <path d="M470 35 Q 480 30, 495 33 Q 480 35, 470 35" fill="#d4a5a5" opacity="0.5" />
+
+            <path d="M550 35 Q 540 25, 525 30 Q 540 35, 550 35" fill="#d4a5a5" opacity="0.7" />
+            <path d="M540 35 Q 530 28, 515 32 Q 530 35, 540 35" fill="#d4a5a5" opacity="0.6" />
+            <path d="M530 35 Q 520 30, 505 33 Q 520 35, 530 35" fill="#d4a5a5" opacity="0.5" />
+
+            <circle cx="500" cy="35" r="4" fill="#d4a5a5" opacity="0.8" />
+
+            <path d="M520 35 Q 530 45, 545 40 Q 530 35, 520 35" fill="#d4a5a5" opacity="0.5" />
+            <path d="M480 35 Q 470 45, 455 40 Q 470 35, 480 35" fill="#d4a5a5" opacity="0.5" />
+        </svg>
 
         <div class="schedule">
             <h1>Во сколько???</h1>
-            <svg width="100%" height="70" viewBox="0 0 1000 70" preserveAspectRatio="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <line x1="150" y1="35" x2="400" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
-                <line x1="600" y1="35" x2="850" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
-
-                <path d="M450 35 Q 460 25, 475 30 Q 460 35, 450 35" fill="#d4a5a5" opacity="0.7" />
-                <path d="M460 35 Q 470 28, 485 32 Q 470 35, 460 35" fill="#d4a5a5" opacity="0.6" />
-                <path d="M470 35 Q 480 30, 495 33 Q 480 35, 470 35" fill="#d4a5a5" opacity="0.5" />
-
-                <path d="M550 35 Q 540 25, 525 30 Q 540 35, 550 35" fill="#d4a5a5" opacity="0.7" />
-                <path d="M540 35 Q 530 28, 515 32 Q 530 35, 540 35" fill="#d4a5a5" opacity="0.6" />
-                <path d="M530 35 Q 520 30, 505 33 Q 520 35, 530 35" fill="#d4a5a5" opacity="0.5" />
-
-                <circle cx="500" cy="35" r="4" fill="#d4a5a5" opacity="0.8" />
-
-                <path d="M520 35 Q 530 45, 545 40 Q 530 35, 520 35" fill="#d4a5a5" opacity="0.5" />
-                <path d="M480 35 Q 470 45, 455 40 Q 470 35, 480 35" fill="#d4a5a5" opacity="0.5" />
-            </svg>
             <div class="first_wrapper">
                 <div class="first_text_wrapper">
                     <div class="start_first_block">
                         <h3>15:00 Сбор гостей и фуршет</h3>
-                        
+
                     </div>
                     <div class="end_first_block">
                         <h3>16:00 Церемония</h3>
@@ -166,19 +174,21 @@
                         <h3>23:00 Завершение вечера</h3>
                         <svg width="100%" height="70" viewBox="0 0 1000 70" preserveAspectRatio="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <line x1="200" y1="35" x2="800" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.7" />
+                            <line x1="150" y1="35" x2="400" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
+                            <line x1="600" y1="35" x2="850" y2="35" stroke="#d4a5a5" stroke-width="1.5" opacity="0.6" />
 
-                            <path d="M50 35 C 80 20, 120 20, 150 35 C 160 40, 170 40, 180 38" fill="none"
-                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
-                            <path d="M50 35 C 80 50, 120 50, 150 35 C 160 30, 170 30, 180 32" fill="none"
-                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                            <path d="M450 35 Q 460 25, 475 30 Q 460 35, 450 35" fill="#d4a5a5" opacity="0.7" />
+                            <path d="M460 35 Q 470 28, 485 32 Q 470 35, 460 35" fill="#d4a5a5" opacity="0.6" />
+                            <path d="M470 35 Q 480 30, 495 33 Q 480 35, 470 35" fill="#d4a5a5" opacity="0.5" />
 
-                            <path d="M950 35 C 920 20, 880 20, 850 35 C 840 40, 830 40, 820 38" fill="none"
-                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
-                            <path d="M950 35 C 920 50, 880 50, 850 35 C 840 30, 830 30, 820 32" fill="none"
-                                stroke="#B76E79" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+                            <path d="M550 35 Q 540 25, 525 30 Q 540 35, 550 35" fill="#d4a5a5" opacity="0.7" />
+                            <path d="M540 35 Q 530 28, 515 32 Q 530 35, 540 35" fill="#d4a5a5" opacity="0.6" />
+                            <path d="M530 35 Q 520 30, 505 33 Q 520 35, 530 35" fill="#d4a5a5" opacity="0.5" />
 
-                            <circle cx="500" cy="35" r="2.5" fill="#B76E79" opacity="0.8" />
+                            <circle cx="500" cy="35" r="4" fill="#d4a5a5" opacity="0.8" />
+
+                            <path d="M520 35 Q 530 45, 545 40 Q 530 35, 520 35" fill="#d4a5a5" opacity="0.5" />
+                            <path d="M480 35 Q 470 45, 455 40 Q 470 35, 480 35" fill="#d4a5a5" opacity="0.5" />
                         </svg>
                     </div>
                 </div>
@@ -192,9 +202,11 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M20.5 3L20.34 3.03L15 5.1L9 3L3.36 4.9C3.15 4.97 3 4.97 3 5V19C3 19.55 3.45 20 4 20L4.5 19.96L9.5 18.06L15 20L20.64 18.1C20.85 18.03 21 17.93 21 17.7V4C21 3.45 20.55 3 20.5 3ZM15 18L9 15.89V5L15 7.11V18Z"
-                    fill="#dddddd" />
+                    fill="#d4a5a5" />
             </svg>
-            <span>Место на карте</span>
+
+            <h1>Где???</h1>
+            <span color="#d4a5a5">Место на карте</span>
         </a>
 
         <div class="wishes">Пожелания</div>
@@ -205,19 +217,21 @@
                 <div class="first_section_of_wishes-container">
                     <img src="static/pics/frog_heart.png" alt="Левая картинка" class="side-img">
 
-                <div class="right-text_of_wishes-container">
-                    <p>Главное для нас – ваше присутствие!</p>
-                    <p>Если хотите подарить нам нужный подарок, будем очень благодарны за вклад в бюджет молодой семьи.</p>
-                </div>
+                    <div class="right-text_of_wishes-container">
+                        <p>Ваше присутствие для нас - огромная радость! <br>
+                            А если вы хотите сделать подарок, будем благодарны за финансовую поддержку наших первых
+                            семейных шагов.</p>
+                    </div>
                 </div>
 
-                 <div class="second_section_of_wishes-container">
+                <div class="second_section_of_wishes-container">
 
-                <div class="left-text_of_wishes-container">
-                    <p>Пожалуйста, не дарите нам цветы, мы не успеем насладиться их красотой до отъезда в наше свадебное путешествие.</p>
+                    <div class="left-text_of_wishes-container">
+                        <p>Пожалуйста, не дарите нам цветы, мы не успеем насладиться их красотой до отъезда в наше
+                            свадебное путешествие.</p>
+                    </div>
+                    <img src="static/pics/frog_flow.png" alt="Правая картинка" class="side-img">
                 </div>
-                <img src="static/pics/frog_flow.png" alt="Правая картинка" class="side-img">
-                 </div>
             </div>
 
             <!-- Нижняя картинка по центру -->
@@ -227,12 +241,18 @@
 
 
         <div class="dress_code">Дресс код</div>
+        <div class="dress_code_container">
+            <p>Этот день мы хотим наполнить красотой и гармонией - ваш образ может стать частью этой картины. Будем
+                рады, если вы поддержите цветовую гамму нашего мероприятия.</p>
+        </div>
         <img src="static/pics/style_frog.png" class="style_image">
+        <div class="after_dress_code">Лягушки смогли пройти фейсконтроль, а вы?</div>
         <div class="administration_work">Олеся</div>
 
         <div class="wedding-form-container">
             <h2 class="wedding-form-title">Анкета гостя</h2>
-            <p class="wedding-form-subtitle">Пожалуйста, заполните форму до 1 мая</p>
+            <p class="wedding-form-subtitle">Пожалуйста, заполните анкету до 1 мая, чтобы мы могли планировать наше
+                торжество наилучшим образом.</p>
 
             <form action="/post_form" method="POST">
 
@@ -284,7 +304,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="diet">Предпочтения в еде / Аллергии</label>
+                    <label for="diet">Особенности, которые мы должны знать</label>
                     <textarea id="diet" name="diet" rows="3"
                         placeholder="Например: не ем рыбу, аллергия на орехи..."></textarea>
                 </div>
@@ -295,11 +315,6 @@
 
 
     </main>
-
-    <footer>
-        До встречи!
-        <p>© Copyright</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
