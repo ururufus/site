@@ -95,19 +95,23 @@ section {
     text-align: center;
     font-weight: 700;
     font-size: 125%;
-    display: block;
+    display: flex;
     align-items: center;
     gap: 1px;
 }
 
 .where_left_section
 {
-    max-width: 50%;
+    width: 50%;
+    height: auto;
+    display: block;
 }
 
 .where_right_section
 {
-    max-width: 50%;
+    width: 50%;
+    height: auto;
+    display: block;
 }
 
 .wishes {
