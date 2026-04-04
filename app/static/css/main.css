@@ -32,6 +32,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    color: #954d4d;
 }
 
 header {
@@ -81,9 +82,16 @@ section {
     text-align: center;
     font-size: 125%;
 }
+.where_text
+{
+    text-align: center;
+}
 
 .map_block
 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
     font-weight: 700;
     font-size: 125%;
@@ -133,8 +141,6 @@ section {
     color: #333;
     font-size: 100%;
 }
-
-
 
 .second_section_of_wishes-container {
     display: flex;
@@ -227,6 +233,11 @@ section {
         max-width: 50%;
     }
 
+}
+
+.administration_work
+{
+    text-align: center;
 }
 
 .dress_code {
