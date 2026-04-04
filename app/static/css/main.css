@@ -101,12 +101,12 @@ section {
 
 .where_left_section
 {
-    width: 50%;
+    max-width: 50%;
 }
 
 .where_right_section
 {
-    width: 50%;
+    max-width: 50%;
 }
 
 .wishes {
@@ -138,8 +138,6 @@ section {
     font-family: 'MyFont', Arial, sans-serif;
     text-align: center;
     line-height: 1.4;
-    color: #333;
-    font-size: 100%;
 }
 
 .second_section_of_wishes-container {
@@ -154,8 +152,6 @@ section {
     font-family: 'MyFont', Arial, sans-serif;
     text-align: center;
     line-height: 1.4;
-    color: #333;
-    font-size: 30px;
 }
 
 /* Боковые картинки */
