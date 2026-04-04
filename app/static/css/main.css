@@ -95,7 +95,7 @@ section {
     text-align: center;
     font-weight: 700;
     font-size: 125%;
-    display: flex;
+    display: block;
     align-items: center;
     gap: 1px;
 }
