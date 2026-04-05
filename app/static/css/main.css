@@ -301,7 +301,7 @@ olesya_tg_a {
 
 @media (min-width: 1000px) {
     .into_photo {
-        display: block;
+        display: flex;
         align-items: center;
     }
 
@@ -309,6 +309,11 @@ olesya_tg_a {
         max-width: 60%;
     }
 
+    .style_block
+    {
+        display: flex;
+        align-items: center;
+    }
     .style_image {
         max-width: 60%;
     }
