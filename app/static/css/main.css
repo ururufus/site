@@ -73,7 +73,7 @@ a
 }
 
 a:visited {
-    color: #d57a7a;
+    color: #d4a5a5;
 }
 
 nav {
@@ -261,6 +261,13 @@ section {
 
 .administration_work {
     text-align: center;
+}
+
+.olesya_tg_image
+{
+    width: 10%;
+    display: block;
+    align-items: center;
 }
 
 .dress_code {
