@@ -114,6 +114,16 @@ section {
     display: block;
 }
 
+.map_img
+{
+    max-width: 100%;
+}
+
+.frog_compas_img
+{
+    max-width: 60%;
+}
+
 .wishes {
     text-align: center;
     font-weight: 700;
