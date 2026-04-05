@@ -95,6 +95,14 @@ main {
     padding: 0 0;
 }
 
+@media (min-width: 1000)
+{
+    main
+    {
+        align-items: center;
+    }
+}
+
 section {
     margin-bottom: 30px;
 }
@@ -292,16 +300,17 @@ olesya_tg_a {
 }
 
 @media (min-width: 1000px) {
-    .weee_image {
-        max-width: 60%;
+    .into_photo {
         display: block;
         align-items: center;
     }
 
+    .weee_image {
+        max-width: 60%;
+    }
+
     .style_image {
         max-width: 60%;
-        display: block;
-        align-items: center;
     }
 }
 
