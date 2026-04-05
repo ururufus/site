@@ -104,7 +104,7 @@ section {
 {
     width: 50%;
     height: auto;
-    display: block;
+    flex-shrink: 1;
 }
 
 .where_right_section
@@ -243,14 +243,11 @@ section {
 
 .dress_code {
     text-align: center;
-    font-weight: 700;
-    font-size: 125%;
 }
 
 .dress_code_container, .after_dress_code {
     text-align: center;
     font-weight: 700;
-    font-size: 125%;
 }
 
 .style_image,
