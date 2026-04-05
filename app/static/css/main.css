@@ -121,6 +121,11 @@ section {
     max-width: 100%;
 }
 
+.text_map_section
+{
+    display: flex;
+}
+
 
 .wishes {
     text-align: center;
