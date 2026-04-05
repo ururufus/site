@@ -41,11 +41,13 @@ services:
     container_name: nginx
     volumes:
       - ~/.uploads/images/flask-dir:/app/app/static/upload
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     env_file:
       - .env
     depends_on:
       - flask
     ports:
       - "80:80"
+      - "443:443"
     
 
