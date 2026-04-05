@@ -259,14 +259,14 @@ section {
 
 }
 
-.administration_work {
+.administration_work, .olesya_tg {
     text-align: center;
     align-items: center;
 }
 
 .olesya_tg_image
 {
-    width: 30%;
+    width: 20%;
     display: block;
     align-items: center;
 }
