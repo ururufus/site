@@ -291,6 +291,18 @@ olesya_tg_a {
     align-items: center;
 }
 
+@media (min-width: 1024)
+{
+    .weee_image
+    {
+        width: 50%;
+    }
+    .style_image
+    {
+        width: 50%;
+    }
+}
+
 .palette_pic,
 .palette_pic_mob {
     width: 100%;
