@@ -13,6 +13,7 @@ from .routes.post_form import post_form
 
 def create_app(config_class=Config):
     app = Flask(__name__)
+    app.config['PREFERRED_URL_SCHEME'] = 'https'
 
     #app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}"
     #app.config['SECRET_KEY'] = 'hbvgfcdxhjknkm897654jhklm54609@@@@q'
