@@ -17,6 +17,16 @@
     font-display: swap;
 }
 
+:root {
+  --mobile_size_normal: 100%;
+  --mobile_size_medium: 125%;
+  --mobile_size_max: 250%;
+
+  --desktop_size_normal: 200%;
+  --desktop_size_medium: 250%;
+  --desktop_size_max: 400%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +43,15 @@ body {
     width: 100%;
     margin: 0;
     color: #954d4d;
+    background-color: #C0C0C0;
+}
+
+
+@media (min-width: 1000px)  {
+    .body
+    {
+
+    }
 }
 
 header {
