@@ -261,11 +261,12 @@ section {
 
 .administration_work {
     text-align: center;
+    align-items: center;
 }
 
 .olesya_tg_image
 {
-    width: 10%;
+    width: 30%;
     display: block;
     align-items: center;
 }
