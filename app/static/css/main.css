@@ -261,7 +261,7 @@ section {
 }
 
 .olesya_tg {
-    display: flex;
+    display: block;
     align-items: center;
 }
 
@@ -271,8 +271,6 @@ olesya_tg_a {
 
 .olesya_tg_image {
     width: 20%;
-    display: block;
-    align-items: center;
 }
 
 .dress_code {
