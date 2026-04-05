@@ -259,8 +259,13 @@ section {
 
 }
 
-.administration_work, .olesya_tg {
+.administration_work {
     text-align: center;
+}
+
+.olesya_tg
+{
+    display: block;
     align-items: center;
 }
 
