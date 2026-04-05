@@ -95,10 +95,8 @@ main {
     padding: 0 0;
 }
 
-@media (min-width: 1000)
-{
-    main
-    {
+@media (min-width: 1000) {
+    main {
         align-items: center;
     }
 }
@@ -306,14 +304,14 @@ olesya_tg_a {
     }
 
     .weee_image {
-        max-width: 60%;
+        max-width: 70%;
     }
 
-    .style_block
-    {
+    .style_block {
         display: flex;
         justify-content: center;
     }
+
     .style_image {
         max-width: 60%;
     }
@@ -456,6 +454,10 @@ select:focus {
         box-shadow: none;
         border: none;
         background: transparent;
+    }
+
+    header {
+        font-size: 250%;
     }
 }
 
