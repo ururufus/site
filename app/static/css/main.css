@@ -53,6 +53,7 @@ body {
     }
 }
 
+
 header {
     color: #954d4d;
     text-align: center;
@@ -63,6 +64,16 @@ header {
     text-align: right;
     color: #954d4d;
     font-size: 125%;
+}
+
+a
+{
+    color: #d4a5a5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d57a7a;
 }
 
 nav {
@@ -250,11 +261,6 @@ section {
 
 .administration_work {
     text-align: center;
-}
-
-.olesya_phone
-{
-    color: #d4a5a5;
 }
 
 .dress_code {
