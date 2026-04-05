@@ -291,15 +291,17 @@ olesya_tg_a {
     align-items: center;
 }
 
-@media (min-width: 1000px) 
-{
-    .weee_image
-    {
-        max-width: 50%;
+@media (min-width: 1000px) {
+    .weee_image {
+        max-width: 60%;
+        display: block;
+        align-items: center;
     }
-    .style_image
-    {
-        max-width: 50%;
+
+    .style_image {
+        max-width: 60%;
+        display: block;
+        align-items: center;
     }
 }
 
