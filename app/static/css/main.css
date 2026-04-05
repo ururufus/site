@@ -285,7 +285,6 @@ section {
     text-align: center;
     font-family: 'MyFont', 'Georgia', serif;
     color: #333;
-    font-size: 28px;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -293,7 +292,6 @@ section {
 .wedding-form-subtitle {
     text-align: center;
     color: #5c5b5b;
-    font-size: 14px;
     margin-bottom: 30px;
     font-style: initial;
 }
@@ -307,7 +305,6 @@ label {
     display: block;
     margin-bottom: 8px;
     color: #555;
-    font-size: 14px;
     font-weight: 500;
 }
 
@@ -321,7 +318,6 @@ textarea {
     padding: 12px 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 15px;
     background-color: #fafafa;
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -374,7 +370,6 @@ select:focus {
     cursor: pointer;
     font-weight: normal;
     color: #555;
-    font-size: 15px;
 }
 
 .radio-label input,
@@ -396,7 +391,6 @@ select:focus {
     color: white;
     border: none;
     border-radius: 6px;
-    font-size: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
