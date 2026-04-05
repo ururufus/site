@@ -66,8 +66,7 @@ header {
     font-size: 125%;
 }
 
-a
-{
+a {
     color: #d4a5a5;
     text-decoration: none;
 }
@@ -127,13 +126,11 @@ section {
     gap: 1px;
 }
 
-.map_img
-{
+.map_img {
     max-width: 100%;
 }
 
-.text_map_section
-{
+.text_map_section {
     display: flex;
 }
 
@@ -263,14 +260,16 @@ section {
     text-align: center;
 }
 
-.olesya_tg
-{
+.olesya_tg {
     display: flex;
     align-items: center;
 }
 
-.olesya_tg_image
-{
+olesya_tg_a {
+    align-items: center;
+}
+
+.olesya_tg_image {
     width: 20%;
     display: block;
     align-items: center;
@@ -294,8 +293,8 @@ section {
     align-items: center;
 }
 
-.palette_pic, .palette_pic_mob
-{
+.palette_pic,
+.palette_pic_mob {
     width: 100%;
     display: block;
     align-items: center;
