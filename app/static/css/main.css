@@ -116,25 +116,6 @@ section {
     gap: 1px;
 }
 
-.where_left_section {
-    width: 50%;
-    height: auto;
-    flex-shrink: 1;
-}
-
-.where_right_section {
-    width: 50%;
-    height: auto;
-    display: block;
-}
-
-.map_img {
-    max-width: 100%;
-}
-
-.frog_compas_img {
-    max-width: 60%;
-}
 
 .wishes {
     text-align: center;
@@ -261,6 +242,11 @@ section {
     text-align: center;
 }
 
+.olesya_phone
+{
+    color: #d4a5a5;
+}
+
 .dress_code {
     text-align: center;
 }
@@ -274,6 +260,13 @@ section {
 .style_image,
 .weee_image,
 .palette {
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+.palette_pic, .palette_pic_mob
+{
     width: 100%;
     display: block;
     align-items: center;
