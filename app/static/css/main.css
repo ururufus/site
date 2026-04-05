@@ -43,12 +43,12 @@ body {
     width: 100%;
     margin: 0;
     color: #954d4d;
-    background-color: #D3D3D3;
+    background-color: #DBDBDB;
 }
 
 
 @media (min-width: 1000px) {
-    .body {
+    body {
         font-size: var(--desktop_size_normal);
     }
 }
