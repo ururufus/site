@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:15-alpine
+    image: postgres:15
     container_name: postgres
     volumes:
       - ~/.pg/pg_data/flask-dir:/var/lib/postgresql/data
